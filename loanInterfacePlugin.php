@@ -64,14 +64,6 @@ class loanInterfacePlugin extends BaseApplicationPlugin {
                 "default" => array(
                     'module' => 'loanInterface',
                     'controller' => 'loans',
-                    'action' => 'loans'
-                )
-            );
-            $va_menu_items[] = array(
-                'displayName' => "Index",
-                "default" => array(
-                    'module' => 'loanInterface',
-                    'controller' => 'loans',
                     'action' => 'index'
                 )
             );
