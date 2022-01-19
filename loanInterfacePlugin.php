@@ -28,12 +28,11 @@
 
 class loanInterfacePlugin extends BaseApplicationPlugin {
     # -------------------------------------------------------
-    protected $description = 'Loan interface plugin for CollectiveAccess focused on barcode readers';
-    # -------------------------------------------------------
     private $opo_config;
     private $ops_plugin_path;
     # -------------------------------------------------------
     public function __construct($ps_plugin_path) {
+        $this->description = _t('Loan interface plugin for CollectiveAccess focused on barcode readers');
         $this->ops_plugin_path = $ps_plugin_path;
         $this->description = _t('');
         parent::__construct();
@@ -77,7 +76,7 @@ class loanInterfacePlugin extends BaseApplicationPlugin {
             );
 
             $pa_menu_bar['loanInterfaceMenu'] = array(
-                'displayName' => "Prêter",
+                'displayName' => "Médiathèque",
                 'navigation' => $va_menu_items
             );
         }

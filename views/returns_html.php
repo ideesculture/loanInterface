@@ -17,6 +17,10 @@
 <?php endif; ?>
 
 <form method="get" action="<?php print __CA_URL_ROOT__; ?>/index.php/loanInterface/loans/returns">
-    <input type="text" name="idno" width="50"/>
+    <input type="text" id="textboxID" name="idno" width="50"/>
     <input type="submit"/>
 </form>
+
+<script>
+    $("#textboxID").focus();
+</script>
